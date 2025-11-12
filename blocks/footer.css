@@ -1,0 +1,16 @@
+.footer {
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 60px 0 60px;
+  margin: 0 auto;
+  color: rgba(33, 33, 33, 1);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
