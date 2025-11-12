@@ -1,23 +1,30 @@
-# Project 3: Spots
+# Project 3: Spots — Social Image Sharing App
 
-### Overview
+Spots is a responsive social media web app where users can share images, like posts, and personalize their profiles. The design was created in Figma and brought to life using HTML, CSS, and responsive web design principles. It includes a simple like (❤️) feature for engagement and editable profile bios for user customization. Optimized for both desktop and mobile with media queries.
 
-- Intro
-- Figma
-- Images
+## Tech Stack
 
-**Live Site:** [View Project](https://ln-harris.github.io/se_project_spots)
+- Design: Figma (UI/UX mockups & wireframes)
 
-**Intro**
+- Frontend: HTML, CSS, Media Queries
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+- Responsive Design: Built for desktop, tablet, and mobile
 
-**Figma**
+![Desktop View](./images/demo/demo_desktop.png)
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+## DEPLOYMENT
 
-**Images**
+This webpage is deployed to Github pages.
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+**🖥️ Live Site:** [View Project](https://ln-harris.github.io/se_project_spots)
 
-Good luck and have fun!
+**🎥 Live Recorded Demo:** [View Video]()
+
+## Plan on improving:
+
+- 🌓 Add a light and dark theme for users toggle
+- 🔐 Demo Login System: Create a new login.html page with username + password form.
+
+Create a Demo User credentials (e.g., demoUser / 1234)
+
+On success → Logs you into Demo Profile.
