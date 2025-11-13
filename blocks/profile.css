@@ -117,6 +117,7 @@
 
   .profile__name {
     margin: 0 0 6px;
+    font-size: 20px;
   }
 
   .profile__description {
