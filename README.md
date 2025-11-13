@@ -18,7 +18,10 @@ This webpage is deployed to Github pages.
 
 **🖥️ Live Site:** [View Project](https://ln-harris.github.io/se_project_spots)
 
-**🎥 Live Recorded Demo:** [View Video](https://drive.google.com/file/d/1fbWxN0Vrc3jYohaYHboYqhdFqOxjTxoI/view?usp=sharing)
+## Project Pitch Video
+
+Check out this live recorded demo 🎥 [View Video](https://drive.google.com/file/d/1fbWxN0Vrc3jYohaYHboYqhdFqOxjTxoI/view?usp=sharing) where I describe my
+project and some challenges I faced while building it.
 
 ## Plan on improving:
 
