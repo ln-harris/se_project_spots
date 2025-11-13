@@ -22,7 +22,8 @@ This webpage is deployed to Github pages.
 
 ## Plan on improving:
 
-- 🌓 Add a light and dark theme for users toggle
+- 🌓 Add a light and dark theme for users toggle.
+- 💬 Add a comment button next to the like button for users to comment.
 - 🔐 Demo Login System: Create a new login.html page with username + password form.
 
 Create a Demo User credentials (e.g., demoUser / 1234)
