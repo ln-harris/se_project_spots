@@ -29,6 +29,12 @@
 .modal__title {
   margin: 0;
   padding: 32px 0 0 50px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .modal_is-opened {
@@ -47,11 +53,18 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  padding: 36px 50px 32px;
+  margin: 36px 50px;
 }
 
 .modal__label {
   margin: 0 0 32px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0;
+  opacity: 0.7;
 }
 
 .modal__input {
@@ -62,6 +75,12 @@
   border-radius: 8px;
   opacity: 0.4;
   box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .modal__input::placeholder {
@@ -75,6 +94,12 @@
   height: 52px;
   padding: 18px 58px;
   border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width: 630px) {
@@ -92,6 +117,7 @@
   }
   .modal__title {
     padding: 0 0 24px;
+    font-size: 20px;
   }
   .modal__form {
     display: flex;

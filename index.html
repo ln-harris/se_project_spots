@@ -117,8 +117,8 @@
       </footer>
       <div class="modal modal_is-opened">
         <div class="modal__container">
-          <button class="modal__close-btn"></button>
-          <h2 type="button" class="modal__title">Edit profile</h2>
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">Edit profile</h2>
           <form class="modal__form">
             <label for="profile-name-input" class="modal__label">
               Name<input
@@ -137,7 +137,34 @@
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
+
+
+
+
+
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button type="button" class="modal__close-btn"></button>
+          <h2 class="modal__title">New post</h2>
+          <form class="modal__form">
+            <label for="profile-name-input" class="modal__label">
+              Image link<input
+                id="card-image-input"
+                type="url"
+                class="modal__input"
+                placeholder="https://unsplash.com/example.jpg"
+            /></label>
+            <label for="profile-description-input" class="modal__label">
+              Caption<input
+                id="card-caption-input"
+                type="text"
+                class="modal__input"
+                placeholder="Val Thorens"
+            /></label>
+            <button type="submit" class="modal__submit-btn">Save</button>
+          </form>
+        </div>
+
       </div>
-    </div>
   </body>
 </html>
