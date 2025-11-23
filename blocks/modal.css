@@ -37,9 +37,9 @@
   letter-spacing: 0;
 }
 
-.modal_is-opened {
+/* .modal_is-opened {
   visibility: visible;
-}
+} */
 
 .modal__container {
   max-width: 730px;
