@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  transition: opacity 0.3s ease; /* fade effect */
 }
 
 .modal__close-btn {
@@ -44,6 +45,8 @@
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .modal__container {
@@ -89,6 +92,10 @@
   letter-spacing: 0;
 }
 
+.modal__input:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 .modal__input::placeholder {
   color: #212121;
 }
