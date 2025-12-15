@@ -65,8 +65,8 @@ function closeModal(modal) {
 
 // --- Edit Profile Modal Open ---
 editProfileBtn.addEventListener("click", function () {
-  // Trim removes hidden leading spaces/line breaks from profile text.
-  // Without trim(), autofilled values looked shifted compared to the placeholder.
+  // --- Trim removes hidden leading spaces/line breaks from profile text. ---
+  // --- Without trim(), autofilled values looked shifted compared to the placeholder. ---
   editProfileNameInput.value = profileNameEl.textContent.trim();
   editProfileDescriptionInput.value = profileDescriptionEl.textContent.trim();
   openModal(editProfileModal);
