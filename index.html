@@ -15,6 +15,7 @@
       <header class="header">
         <img src="./images/logo.svg" alt="Spot logo" class="header__logo" />
       </header>
+
       <main class="content">
         <section class="profile page__section">
           <img
@@ -36,79 +37,24 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/beach-house-infinity-pool.jpg"
-                alt="Beach house with infinity pool"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Beach house</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/man-dunking-basketball.jpg"
-                alt="Man dunking basketball"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Dunk contest</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/red-ferrari.jpg"
-                alt="Red Ferrari"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">New Ferrari addition</h2>
-
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="A very long bridge, over the forest"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">A very long bridge, over the forest</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/two-dogs-sitting.jpg"
-                alt="Two dogs sitting"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Cute dogs</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/alaska-mountain-lake-view.jpg"
-                alt="Alaskan mountains with lake view"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Alaskan mountain view</h2>
-                <button type="button" class="card__like-btn"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <button class="card__delete-btn" type="button"></button>
+                <img src="" alt="" class="card__image" />
+                <div class="card__content">
+                  <h2 class="card__title">Beach house</h2>
+                  <button type="button" class="card__like-btn"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
+
       <footer class="footer page">
         <p class="footer__copyright">2025 &copy; Lindsey Harris</p>
       </footer>
+
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-btn"></button>
@@ -164,6 +110,19 @@
           </form>
         </div>
       </div>
+
+      <div class="modal modal_type_preview" id="preview-modal">
+        <div class="modal__image-container">
+          <button
+            aria-label="Close modal"
+            class="modal__close-btn modal__close-btn-preview"
+            type="button"
+          ></button>
+          <img src="#" alt="" class="modal__image" />
+          <p class="modal__caption">Golden Gate Bridge</p>
+        </div>
+      </div>
+
       <script src="./scripts/index.js"></script>
     </div>
   </body>
