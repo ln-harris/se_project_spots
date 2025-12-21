@@ -161,11 +161,14 @@
   color: white;
   background-color: #212121;
   border-radius: 8px;
-  height: 32px;
-  width: 214px;
+  height: auto;
+  max-width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: break-word;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -207,15 +210,5 @@
   }
   .modal__submit-btn {
     max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 630px) {
-  .modal__image {
-    max-width: 288px;
-  }
-
-  .modal__caption {
-    font-size: 16px;
   }
 }

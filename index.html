@@ -40,7 +40,7 @@
             <template id="card-template">
               <li class="card">
                 <button class="card__delete-btn" type="button"></button>
-                <img src="" alt="" class="card__image" />
+                <img src="#" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title">Beach house</h2>
                   <button type="button" class="card__like-btn"></button>
@@ -51,9 +51,11 @@
         </section>
       </main>
 
-      <footer class="footer page">
-        <p class="footer__copyright">2025 &copy; Lindsey Harris</p>
-      </footer>
+      <section class="page">
+        <footer class="footer">
+          <p class="footer__copyright">2025 &copy; Lindsey Harris</p>
+        </footer>
+      </section>
 
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
@@ -67,6 +69,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -76,6 +79,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -95,6 +99,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="https://unsplash.com/example.jpg"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
@@ -104,6 +109,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Val Thorens"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -119,7 +125,7 @@
             type="button"
           ></button>
           <img src="#" alt="" class="modal__image" />
-          <p class="modal__caption">Golden Gate Bridge</p>
+          <p class="modal__caption"></p>
         </div>
       </div>
 
