@@ -9,7 +9,7 @@ const initialCards = [
     link: "https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "New Ferrari addition",
+    name: "New Ferrari",
     link: "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
@@ -45,6 +45,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 );
 
 const newPostForm = newPostModal.querySelector(".modal__form");
+const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 const newPostCardImageInput = newPostModal.querySelector("#card-image-input");
 const newPostCardCaptionInput = newPostModal.querySelector(
   "#card-caption-input"
@@ -113,6 +114,8 @@ editProfileBtn.addEventListener("click", function () {
   // --- Without trim(), autofilled values looked shifted compared to the placeholder. ---
   editProfileNameInput.value = profileNameEl.textContent.trim();
   editProfileDescriptionInput.value = profileDescriptionEl.textContent.trim();
+
+  resetValidation(editProfileForm, settings);
   openModal(editProfileModal);
 });
 
@@ -128,6 +131,8 @@ newPostBtn.addEventListener("click", function () {
 
 // --- New Post Modal Close ---
 newPostCloseBtn.addEventListener("click", function () {
+  newPostForm.reset(); // clears typed values
+  resetValidation(newPostForm, settings);
   closeModal(newPostModal);
 });
 
@@ -156,11 +161,11 @@ function handleNewPostSubmit(evt) {
   };
 
   const newCardEl = getCardElement(newCardData);
-
   cardsList.prepend(newCardEl);
 
-  closeModal(newPostModal);
   newPostForm.reset();
+  resetValidation(newPostForm);
+  closeModal(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
