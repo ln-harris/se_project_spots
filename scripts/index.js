@@ -100,18 +100,36 @@ function getCardElement(data) {
   return cardElement;
 }
 
-// --- Reusable Modal instead of repeating ---
+// --- Modal Close with Esc Key ---
+function handleEscClose(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) closeModal(openedModal);
+  }
+}
+// --- Only close if the overlay itself was clicked ---
+function handleOverlayClick(evt) {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+}
+
+// --- Reusable Open/Close Modal instead of repeating ---
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscClose);
+  modal.addEventListener("mousedown", handleOverlayClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscClose);
+  modal.removeEventListener("mousedown", handleOverlayClick);
 }
 
 // --- Edit Profile Modal Open ---
 editProfileBtn.addEventListener("click", function () {
-  // --- Without trim(), autofilled values looked shifted compared to the placeholder. ---
+  // --- Without trim(), autofilled values looked shifted ---
   editProfileNameInput.value = profileNameEl.textContent.trim();
   editProfileDescriptionInput.value = profileDescriptionEl.textContent.trim();
 
@@ -164,7 +182,7 @@ function handleNewPostSubmit(evt) {
   cardsList.prepend(newCardEl);
 
   newPostForm.reset();
-  resetValidation(newPostForm);
+  resetValidation(newPostForm, settings);
   closeModal(newPostModal);
 }
 
