@@ -149,8 +149,6 @@ newPostBtn.addEventListener("click", function () {
 
 // --- New Post Modal Close ---
 newPostCloseBtn.addEventListener("click", function () {
-  newPostForm.reset(); // clears typed values
-  resetValidation(newPostForm, settings);
   closeModal(newPostModal);
 });
 

@@ -10,13 +10,17 @@ Spots is a responsive social media web app where users can share images, like po
 
 - Responsive Design: Built for desktop, tablet, and mobile
 
-![Desktop View](./images/demo/demo_desktop.png)
-
 ## DEPLOYMENT
 
 This webpage is deployed to Github pages.
 
-**🖥️ Live Site:** [View Project](https://ln-harris.github.io/se_project_spots)
+**🖥️ Live Site:** [Click here to View Project Demo](https://ln-harris.github.io/se_project_spots)
+
+**Desktop View**![Desktop View](./images/demo/demo_desktop_view.png)
+**📲 Mobile View**![Mobile View](./images/demo/demo_mobile_view_rwd.png)
+**✏️ Edit Profile Modal**![Edit Profile Modal](./images/demo/demo_edit-profile_modal.png)
+**🔍 Form Validation Functions (Checks for errors)**![Form Validation](./images/demo/demo_form-validation.png)
+**📸 Preview Overlay**![Preview Overlay](./images/demo/demo_preview_overlay.png)
 
 ## Project Pitch Video
 
