@@ -1,3 +1,5 @@
+import { enableValidation, settings, resetValidation } from "./validation.js";
+
 // --- Array of the cards ---
 const initialCards = [
   {
@@ -38,17 +40,17 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 // --- Forms & Inputs ---
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
+  "#profile-name-input",
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description-input"
+  "#profile-description-input",
 );
 
 const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 const newPostCardImageInput = newPostModal.querySelector("#card-image-input");
 const newPostCardCaptionInput = newPostModal.querySelector(
-  "#card-caption-input"
+  "#card-caption-input",
 );
 
 // --- Profile ---
@@ -191,3 +193,5 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+enableValidation(settings);

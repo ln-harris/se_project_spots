@@ -1,0 +1,25 @@
+{
+  "name": "se_project_spots",
+  "version": "1.0.0",
+  "description": "Spots is a responsive social media web app where users can share images, like posts, and personalize their profiles. The design was created in Figma and brought to life using HTML, CSS, and responsive web design principles. It includes a simple like (❤️) feature for engagement and editable profile bios for user customization. Optimized for both desktop and mobile with media queries.",
+  "homepage": "https://github.com/ln-harris/se_project_spots#readme",
+  "bugs": {
+    "url": "https://github.com/ln-harris/se_project_spots/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ln-harris/se_project_spots.git"
+  },
+  "license": "ISC",
+  "author": "Lindsey Harris",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "7.3.1"
+  }
+}
