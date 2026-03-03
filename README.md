@@ -54,6 +54,7 @@ project and some challenges I faced while building it.
 
 - [First Video](https://drive.google.com/file/d/1fbWxN0Vrc3jYohaYHboYqhdFqOxjTxoI/view?usp=sharing)
 - [Second Video](https://www.loom.com/share/829037a07f334347b9493bdd83ca9ae4)
+- [Third Video](https://www.loom.com/share/a412e56ad15f46a79e45e9f2fbceb473)
 
 ## Plan on improving:
 
