@@ -25,39 +25,9 @@ The app connects to a remote server to persist user data and post interactions. 
 - Responsive Design: Flexbox, Media Queries
 - Version Control: Git & GitHub
 
-## DEPLOYMENT
+## Deployment
 
-GitHub Pages serves the production build at:
-https://ln-harris.github.io/se_project_spots/
-
-In the GitHub repository, open **Settings → Pages** and set **Source** to
-**GitHub Actions**. After the changes are committed and pushed to `main`, the
-`Deploy Spots to GitHub Pages` workflow builds and deploys `dist/` automatically.
-You can also run it manually from the **Actions** tab.
-
-## 🧪 Running the Project Locally
-
-Use Node.js 22.12+ (Node 22 LTS recommended).
-
-```sh
-npm ci
-npm run dev
-```
-
-Open the URL printed by Vite, normally
-http://localhost:5173/se_project_spots/.
-
-To check the same production build that GitHub Pages serves:
-
-```sh
-npm run build
-npm run preview
-```
-
-Open http://localhost:4173/se_project_spots/ (or the URL printed by Vite).
-The app still needs internet access for its remote API and posted images.
-
-**🖥️ Live Site:** [Click here to View Project Demo](https://ln-harris.github.io/se_project_spots)
+[🖥️ View Live Demo](https://ln-harris.github.io/se_project_spots/)
 
 **Desktop View**![Desktop View](./src/images/demo/demo_desktop_view.png)
 **📲 Mobile View**![Mobile View](./src/images/demo/demo_mobile_view.png)
